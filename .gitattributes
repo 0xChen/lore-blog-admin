@@ -1,0 +1,18 @@
+* text=auto eol=lf
+
+*.js text
+*.css text
+*.html text
+
+*.yml text
+*.xml text
+*.conf text
+*.cnf text
+
+*.txt text
+*.md text
+
+*.png -text
+*.gif -text
+*.jpg -text
+*.jpeg -text

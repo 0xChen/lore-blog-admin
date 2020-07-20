@@ -1,0 +1,35 @@
+.el-dropdown-menu__item {
+  position: relative;
+
+  a:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    content: "";
+  }
+}
+
+.el-popover__title {
+  font-size: 14px;
+}
+
+.el-upload {
+  width: 100%;
+
+  .el-upload-dragger {
+    width: 100%;
+    max-height: 180px;
+  }
+}
+
+.el-upload-list__item-thumbnail {
+  display: block;
+}
+
+.el-cascader-menu__wrap {
+  // 原组件这个高度会被 el-scrollbar__wrap 中的高度覆盖掉, 导致 x 轴出现滚动条
+  height: 204px;
+}

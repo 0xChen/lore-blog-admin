@@ -1,0 +1,33 @@
+// base color
+$blue: #324157;
+$light-blue: #3298DC;
+$red: #FF5050;
+$pink: #E65D6E;
+$green: #00BB66;
+$tiffany: #4AB7BD;
+$yellow: #FFC75A;
+$pan-green: #30B08F;
+$grey: #909399;
+
+// sidebar
+$menu-text-color: hsla(0, 0%, 100%, 0.65);
+$menu-active-text-color :$light-blue;
+$menu-background-color: $blue;
+
+$sidebar-width: 210px;
+$sidebar-collapsed-width: 64px;
+
+// header
+$header-height: 64px;
+
+// the :export directive is the magic sauce for webpack
+// https://til.hashrocket.com/posts/sxbrscjuqu-share-scss-variables-with-javascript
+:export {
+  primaryColor: $light-blue;
+  menuTextColor: $menu-text-color;
+  menuActiveTextColor: $menu-active-text-color;
+  menuBackgroundColor: $menu-background-color;
+  sidebarWidth: $sidebar-width;
+  sidebarCollapsedWidth: $sidebar-collapsed-width;
+  headerHeight: $header-height;
+}
